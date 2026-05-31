@@ -188,7 +188,7 @@ function Navigation() {
             </div>
             <div>
               <h1 className={`text-lg sm:text-xl font-bold tracking-tight transition-colors ${scrolled ? 'text-emerald-800' : 'text-white'}`}>
-                GlobalNusantara
+                WeltBridge International
               </h1>
               <p className={`text-[10px] sm:text-xs tracking-widest uppercase transition-colors ${scrolled ? 'text-emerald-600' : 'text-emerald-200'}`}>
                 Export & Import
@@ -312,7 +312,7 @@ function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl text-emerald-100 mb-10 max-w-2xl leading-relaxed"
           >
-            GlobalNusantara adalah perusahaan ekspor-impor terkemuka yang menghubungkan produk berkualitas tinggi Indonesia dengan pasar global. Dari kelapa sawit hingga rempah pilihan, kami memastikan setiap pengiriman memenuhi standar internasional.
+            WeltBridge International adalah perusahaan ekspor-impor terkemuka yang menghubungkan produk berkualitas tinggi Indonesia dengan pasar global. Dari kelapa sawit hingga rempah pilihan, kami memastikan setiap pengiriman memenuhi standar internasional.
           </motion.p>
 
           <motion.div
@@ -577,7 +577,7 @@ function AboutSection() {
             Mengapa Memilih Kami
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Keunggulan GlobalNusantara
+            Keunggulan WeltBridge International
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Lebih dari 15 tahun pengalaman dalam perdagangan internasional menjadikan kami mitra terpercaya Anda.
@@ -619,7 +619,7 @@ function TestimonialsSection({ testimonials }: { testimonials: Testimonial[] }) 
             Dipercaya oleh Ratusan Klien Global
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Dengarkan langsung dari mitra bisnis kami yang telah merasakan layanan dan kualitas produk GlobalNusantara.
+            Dengarkan langsung dari mitra bisnis kami yang telah merasakan layanan dan kualitas produk WeltBridge International.
           </p>
         </AnimatedSection>
 
@@ -909,7 +909,7 @@ function Footer() {
                 <Ship className="h-5 w-5 text-white" />
               </div>
               <div>
-                <h3 className="font-bold text-white text-lg">GlobalNusantara</h3>
+                <h3 className="font-bold text-white text-lg">WeltBridge International</h3>
                 <p className="text-xs text-gray-500 tracking-wider uppercase">Export & Import</p>
               </div>
             </div>
@@ -987,7 +987,7 @@ function Footer() {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} GlobalNusantara. All rights reserved.
+            © {new Date().getFullYear()} WeltBridge International. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span className="hover:text-gray-300 cursor-pointer">Kebijakan Privasi</span>

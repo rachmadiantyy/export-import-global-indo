@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Ship, LayoutDashboard, KanbanSquare, Users, CalendarClock } from 'lucide-react'
 
-export const metadata = { title: 'CRM — GlobalNusantara' }
+export const metadata = { title: 'CRM — WeltBridge International' }
 
 const navItems = [
   { href: '/crm', label: 'Dashboard', icon: LayoutDashboard },
@@ -17,7 +17,7 @@ export default function CrmLayout({ children }: { children: React.ReactNode }) {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
           <Link href="/crm" className="flex items-center gap-2 font-semibold">
             <Ship className="h-5 w-5 text-primary" />
-            <span>GlobalNusantara CRM</span>
+            <span>WeltBridge International CRM</span>
           </Link>
           <nav className="flex items-center gap-1">
             {navItems.map((item) => {

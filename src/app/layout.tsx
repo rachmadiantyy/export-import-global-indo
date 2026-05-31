@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GlobalNusantara - Export Import Trading Company",
+  title: "WeltBridge International - Export Import Trading Company",
   description: "Mitra terpercaya untuk perdagangan ekspor impor produk berkualitas tinggi dari Indonesia ke seluruh dunia. Kelapa Sawit, Kopi, Rempah, Tekstil, dan lainnya.",
   keywords: ["export", "import", "trading", "Indonesia", "palm oil", "coffee", "spices", "batik", "commodities"],
   icons: {
