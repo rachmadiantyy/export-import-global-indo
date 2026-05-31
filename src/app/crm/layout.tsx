@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Ship, LayoutDashboard, KanbanSquare, Users, CalendarClock } from 'lucide-react'
+import { Ship, LayoutDashboard, KanbanSquare, Users, CalendarClock, Sparkles } from 'lucide-react'
 
 export const metadata = { title: 'CRM — WeltBridge International' }
 
@@ -8,6 +8,7 @@ const navItems = [
   { href: '/crm/pipeline', label: 'Pipeline', icon: KanbanSquare },
   { href: '/crm/leads', label: 'Contacts', icon: Users },
   { href: '/crm/activities', label: 'Activities', icon: CalendarClock },
+  { href: '/crm/ai', label: 'AI Co-Pilot', icon: Sparkles },
 ]
 
 export default function CrmLayout({ children }: { children: React.ReactNode }) {
