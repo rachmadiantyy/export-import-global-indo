@@ -36,6 +36,58 @@ model Inquiry {
   updatedAt DateTime @updatedAt
 }
 
+model Lead {
+  id            String        @id @default(cuid())
+  name          String
+  company       String
+  email         String?
+  phone         String?
+  country       String?
+  city          String?
+  type          String        @default("buyer")
+  source        String?
+  notes         String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  opportunities Opportunity[]
+  activities    Activity[]
+}
+
+model Opportunity {
+  id            String     @id @default(cuid())
+  title         String
+  leadId        String
+  lead          Lead       @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  product       String?
+  quantity      String?
+  incoterm      String?
+  expectedValue Float      @default(0)
+  currency      String     @default("USD")
+  stage         String     @default("new")
+  probability   Int        @default(10)
+  expectedClose DateTime?
+  ownerName     String?
+  lostReason    String?
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  activities    Activity[]
+}
+
+model Activity {
+  id            String       @id @default(cuid())
+  type          String
+  subject       String
+  notes         String?
+  dueDate       DateTime?
+  done          Boolean      @default(false)
+  leadId        String?
+  lead          Lead?        @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  opportunityId String?
+  opportunity   Opportunity? @relation(fields: [opportunityId], references: [id], onDelete: Cascade)
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+}
+
 model Testimonial {
   id        String   @id @default(cuid())
   name      String
