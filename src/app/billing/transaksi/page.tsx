@@ -20,7 +20,7 @@ const TRX: { label: string; value: string; highlight?: boolean }[] = [
   { label: "Nama Acquirer", value: "SHOPEEPAY" },
   { label: "Tips", value: "0.00" },
   { label: "Biaya Service / Diskon", value: "-" },
-  { label: "Total Nominal", value: "2,300,000" },
+  { label: "Total Nominal", value: "2,361,600" },
   { label: "ID Terminal", value: "22868864" },
   { label: "No. Referensi Transaksi", value: "260526002240" },
   { label: "Status Transaksi", value: "Sukses" },
