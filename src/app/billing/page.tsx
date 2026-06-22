@@ -119,9 +119,6 @@ export default function BillingPage() {
               {periodStart.toLocaleDateString("id-ID")} —{" "}
               {periodEnd.toLocaleDateString("id-ID")}
             </p>
-            <p className="text-sm text-muted-foreground">
-              Skema: Pay as you go
-            </p>
           </div>
         </div>
 
@@ -192,18 +189,6 @@ export default function BillingPage() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="mt-8 border-t pt-6 text-xs text-muted-foreground">
-          <p>
-            Tagihan ini dibuat untuk merekap pemakaian VM yang ditagih secara
-            pay-as-you-go (per jam) oleh {PROVIDER.name}, karena provider tidak
-            menerbitkan invoice bulanan secara otomatis.
-          </p>
-          <p className="mt-2">
-            Tarif acuan: {rupiah(RATE_PER_HOUR)}/jam · basis {HOURS_PER_MONTH}{" "}
-            jam/bulan. Total menyesuaikan jam pemakaian aktual.
-          </p>
-        </div>
       </div>
     </div>
   );
